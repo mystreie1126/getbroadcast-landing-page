@@ -1,0 +1,105 @@
+
+
+/*.animate{
+	transition-property: transform;
+	transition-duration: 1s;
+	transition-timing-function: ease-out;
+}
+
+.box:scroll{
+	transform: translateX(100px);
+	transform-origin: top left;
+
+}
+
+*/
+
+/*global style */
+
+body{
+	font-family: 'PT Sans', sans-serif;
+	line-height: 1.5;
+	/*background: #CC2B41;*/	
+}
+
+a{
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+/* top main nav bar */
+
+.top-nav{
+	width: 80%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 20px;
+	font-size: .8em;
+
+	/*leaving the responsive design here......*/
+}
+
+.top-nav li{
+	padding: 10px;
+}
+
+.top-nav a{
+	color: #000;
+	display: block;
+}
+
+.top-nav a:hover{
+	color: #CC2B41;
+}
+
+.search{
+	flex-grow: 0.4;
+}
+
+
+
+/*start with intro content with main page */
+
+#intro{
+	width: 100%;
+	height: calc(100vh - 59px);
+	background: teal;
+	display: flex;
+
+	
+}
+
+#showreel{
+	height: 100%;
+	width: 65%;
+	background: orange;
+}
+
+
+#right{
+	display: flex;
+	flex-direction: column;
+	flex-basis: 45%;
+}
+
+#slides,canvas{
+	width: 100%;
+	height: 50%;
+}
+
+
+
+
+
+@media screen and (max-width: 700px){
+	#showreel{
+		min-width: 100%;
+	}
+}
+
+
+
+
+
+
