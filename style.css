@@ -54,10 +54,8 @@ h1{
 #intro{
 	width: 100%;
 	height: calc(100vh - 59px);
-	background: teal;
 	display: flex;
-
-	
+	background: #fff;
 }
 
 #showreel{
@@ -148,20 +146,66 @@ h1{
 }
 
 */
-
-
-.fa{
+.showreel-video .fa{
 	font-size: 1em;
 	color: #fff;
 }
 
-.fa span{
+.showreel-video span{
 	padding-left: 10px;
 }
+
+
+/*right side styling on the intro section */
+#slides{
+	position: relative;
+	border-top: .5px solid grey;
+	box-sizing: border-box;
+}
+.slide-img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+#slides:hover{
+	border: 3px dashed rgb(118,118,123);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(49,64,204,0.5);
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+  cursor: pointer;
+}
+
+#slides:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
 
 /* media query */
 
 @media screen and (max-width: 700px){
+	/* kill the side bar on the intro section */
 	#showreel{
 		min-width: 100%;
 	}
