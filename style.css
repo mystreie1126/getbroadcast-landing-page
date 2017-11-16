@@ -1,19 +1,5 @@
 
 
-/*.animate{
-	transition-property: transform;
-	transition-duration: 1s;
-	transition-timing-function: ease-out;
-}
-
-.box:scroll{
-	transform: translateX(100px);
-	transform-origin: top left;
-
-}
-
-*/
-
 /*global style */
 
 body{
@@ -27,6 +13,9 @@ a{
 	text-transform: uppercase;
 }
 
+h1{
+	margin: 0;
+}
 /* top main nav bar */
 
 .top-nav{
@@ -36,6 +25,7 @@ a{
 	justify-content: space-between;
 	padding-top: 20px;
 	font-size: .8em;
+	padding-bottom: 20px;
 
 	/*leaving the responsive design here......*/
 }
@@ -73,7 +63,8 @@ a{
 #showreel{
 	height: 100%;
 	width: 65%;
-	background: orange;
+	background: #000;
+	position: relative;
 }
 
 
@@ -88,9 +79,87 @@ a{
 	height: 50%;
 }
 
+.banner{
+	width: 100%;
+	height: 70%;
+	background-position-y: 15%;
+	background-position-x:35%;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 15%;
+	left: -20%;
+}
+
+.slogan, .showreel-video, .event-title{
+	position: absolute;
+	z-index: 1;
+	/*right: 10%;*/
+	color: #fff;
+
+}
+
+.slogan{
+	line-height: 1;
+	right: 5%;
+	top: 20%;
+}
+
+.showreel-video{
+	right: 10%;
+	bottom: 20%;
+	font-size: 20px;
+
+
+}
+
+.showreel-video i:hover{
+   position: relative; 
+   top: -3px; 
+   left: -3px; 
+   text-shadow: 1px 1px teal, 
+                2px 2px teal, 
+                3px 3px teal, 
+                4px 4px teal, 
+                5px 5px teal, 
+                6px 6px teal;
+}
+
+
+.event-title{
+	position: absolute;
+	left: 2%;
+	top: 5%;
+	text-transform: uppercase;
+	font-size: .8em;
+}
 
 
 
+/*.animate{
+	transition-property: transform;
+	transition-duration: 1s;
+	transition-timing-function: ease-out;
+}
+
+.box:scroll{
+	transform: translateX(100px);
+	transform-origin: top left;
+
+}
+
+*/
+
+
+.fa{
+	font-size: 1em;
+	color: #fff;
+}
+
+.fa span{
+	padding-left: 10px;
+}
+
+/* media query */
 
 @media screen and (max-width: 700px){
 	#showreel{
