@@ -39,4 +39,30 @@ setInterval(function(){
 
 },1500);
 
+//adding google map 
+function initMap() {
+  var myLatLng = {lat: 53.341750, lng: -6.262993};
+
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 14,
+    center: myLatLng
+  });
+
+  var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'We are here!'
+  });
+}
+
+
+
+
+
+
+
+
+
+
+
 
