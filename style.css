@@ -22,34 +22,77 @@ h1,h2,h3,h4, p{
 	width: 85%;
 	margin: 0 auto;
 }
+
+.section-title{
+	text-align: center;
+	margin-top: 2em;
+	margin-bottom: 1.5em;
+}
 /* top main nav bar */
 
 header{
 	background: #1e1e1e;
+
 }
+
+header a{
+	color:blue;
+	padding-bottom: 3px;
+}
+
+header a:hover{
+	color: purple;
+	
+}
+
+.top-container{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 8%;
+	z-index: 20;
+
+}
+
 
 .toggle{
 	text-align: right;
 	display: none;
 	cursor: pointer;
+	color:#fff;
 }
 
-
+/*after scroll width change to 80%,width left:10%, original width 70%, left:8%; */
 #main-nav{
+	width: 70%;  
 	display: flex;
 	justify-content: space-between;
-	font-size: .8em;
+	font-size: .9em;
 	align-items: center;
-	padding-bottom: 1.5em;
-	padding-top: .5em;
+	padding: 1.5em;
+	/*padding-bottom: 1.5em;
+	padding-top: .5em;*/
+	
 }
 
-.home{
-	flex-grow: .5;
-}
+
 
 .get{
 	color: red;
+}
+
+.scroll{
+	display: flex;
+	justify-content: space-around;
+	font-size: .9em;
+	align-items: center;
+	padding-bottom: 1.2em;
+	padding-top: .5em;
+	background: #fff;
+
+	.home{
+		font-size: 3em;
+	}
 }
 
 .home a{
@@ -64,15 +107,16 @@ header{
 .section-container{
 	position: relative;
 	width: 100%;
-	border: 1px solid green;
-	height: 75vh;
+	height: 100vh;
+
 }
 
 #main-intro{
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	height: 100%;
-	border: 1px solid green;
+	
 }
 
 .intro-content{
@@ -82,32 +126,81 @@ header{
 .intro-right,.intro-left{
 	height: 100%;
 	width: 50%;
-	border-right: 1px solid blue;
+	
 }
 
 .team-img{
 	width: 100%;
-	height: 80%;
+	height: 65%;
 	position: absolute;
-	top:10%;
+	top:20%;
 	left: -15%;
 }
 
 .slogan, .showreel-icon{
 	position: absolute;
+	color: #fff;
+}
+
+.slogan{
+	line-height: 1;
+	right: 7%;
+	top: 28%; /*from 20% top to 15%*/
+	font-size: 1.4em;
+}
+
+.showreel-icon{
+	right: 10%;
+	bottom: 30%;
+	text-transform: none;
+	font-size: 3em;
+	display: flex;
 }
 
 
+.showreel-icon span{
+	font-size: .5em;
+	align-self: center;
+	margin-left: .15em;
+}
 
 
-/*canvas{
+.quotes{
+	text-align: center;
+}
+
+.logo{
+	width: 4em;
+	display: inline-block;
+	margin-left: 75%;
+	margin-top: 10px;
+}
+
+.about-us article{
+	width: 80%;
+	margin:auto;
+	margin-top: 20%;
+	position: relative;
+	color:#fff;
+}
+
+.about-us p{
+	font-size: .8em;
+	font-style: italic;
+	margin-top: 10%;
+	text-align: center;
+}
+
+canvas{
 	position: absolute;
 	z-index: -3;
 	width: 100%;
 	height: 100%;
 }
-*/
 
+.qumu{
+	color: rgb(215,209,152);
+}
 
 /*.animate{
 	transition-property: transform;
@@ -172,7 +265,7 @@ header{
 */
 
 /*about us*/
-.section-title{
+/*.section-title{
 	padding-bottom: 2em;
 	text-align: center;
 }
@@ -195,7 +288,7 @@ header{
 
 #about-us span{
 	color: rgb(215,209,152);
-}
+}*/
 
 
 /*--client section --*/
@@ -390,6 +483,23 @@ footer a:hover{
 
 
 
+/*hiding about section*/ 
+
+#hiding{
+	background: #1e1e1e;
+	color: #fff;
+	text-align: center;
+	font-size: .8em;
+	padding-bottom: 2em;
+	display: none;
+}
+
+#hiding p{
+	font-style: italic;
+	margin-top: .5em;
+}
+
+
 /* media query */
 
 @media screen and (max-width: 845px){
@@ -430,6 +540,18 @@ footer a:hover{
 		display: block;
 	}
 
+
+	.intro-left{
+		width: 100%;
+	}
+
+	.intro-right{
+		display: none;
+	}
+
+	#hiding{
+		display: block;
+	}
 
 }
 
