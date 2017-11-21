@@ -40,7 +40,10 @@ $(document).ready(function(){
        		"left":"-2%",
        		"transition": "0.5s all ease"
        });
-       console.log(123);
+       
+       $('#main-nav a').css({
+       		"color":"#000"
+       });
      }
     else {
        $('#main-nav').css({
@@ -54,6 +57,10 @@ $(document).ready(function(){
         $('.top-container').css({
        		"left":"8%",
        		"transition": "0.5s all ease"
+       });
+
+        $('#main-nav a').css({
+       		"color":"#fff"
        });
     }
   });

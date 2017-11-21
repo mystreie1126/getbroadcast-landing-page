@@ -88,8 +88,12 @@ header a:hover{
 	
 }
 
+#main-nav a{
+	color: #fff;
+}
+
 #main-nav a:hover{
-	border-bottom: 1px solid green;
+	border-bottom: 1px solid red;
 }
 
 .get{
@@ -182,7 +186,7 @@ header a:hover{
 .about-us article{
 	width: 80%;
 	margin:auto;
-	margin-top: 20%;
+	margin-top: 15%;
 	position: relative;
 	color:#fff;
 }
