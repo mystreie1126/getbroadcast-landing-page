@@ -29,11 +29,32 @@ $(document).ready(function(){
 
 	$(window).scroll(function() {
      if($(window).scrollTop() >= 100) {
-       // $('nav').addClass('scrolled');
+       $('#main-nav').css({
+       		"background":"#fff",
+       		"width":"100%",
+       		"justify-content":"space-around",
+       		"transition": "0.5s all ease"
+       });
+
+       $('.top-container').css({
+       		"left":"-2%",
+       		"transition": "0.5s all ease"
+       });
        console.log(123);
      }
     else {
-      // $('nav').removeClass('scrolled');
+       $('#main-nav').css({
+       		"background":"inherit",
+       		"width":"70%",
+       		"justify-content":"space-between",
+       		"transition": "0.5s all ease"
+
+       });
+
+        $('.top-container').css({
+       		"left":"8%",
+       		"transition": "0.5s all ease"
+       });
     }
   });
 
