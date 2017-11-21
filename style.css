@@ -63,6 +63,18 @@ header a:hover{
 }
 
 /*after scroll width change to 80%,width left:10%, original width 70%, left:8%; */
+/* #main-nav{
+	justify-content: space-around;
+	width:100%;
+	background:#fff;
+}
+	.top-container{
+		left: 0;
+
+
+	}
+
+*/
 #main-nav{
 	width: 70%;  
 	display: flex;
