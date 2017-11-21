@@ -24,127 +24,89 @@ h1,h2,h3,h4, p{
 }
 /* top main nav bar */
 
-#top-nav{
-	background: rgb(31,30,32);
+header{
+	background: #1e1e1e;
 }
 
-.top-nav{
-	margin: auto;
+.toggle{
+	text-align: right;
+	display: none;
+	cursor: pointer;
+}
+
+
+#main-nav{
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
-	padding-top: 10px;
 	font-size: .8em;
-	padding-bottom: 10px;
-	/*leaving the responsive design here......*/
+	align-items: center;
+	padding-bottom: 1.5em;
+	padding-top: .5em;
 }
 
-.top-nav img{
-	width: 6em;
+.home{
+	flex-grow: .5;
 }
 
-.top-nav li{
-	padding: 10px;
+.get{
+	color: red;
 }
 
-.top-nav a{
-	color: #fff;
-	display: block;
+.home a{
+	text-transform: none;
+	font-size: 1.5em;
 }
 
-.top-nav a:hover{
-	color: #CC2B41;
-}
-
-.search{
-	flex-grow: 0.4;
-}
 
 
 
 /*start with intro content with main page */
-
-#intro{
+.section-container{
+	position: relative;
 	width: 100%;
-	height: calc(100vh - 59px);
-	display: flex;
-	background: #fff;
+	border: 1px solid green;
+	height: 75vh;
 }
 
-#showreel{
+#main-intro{
+	display: flex;
+	justify-content: space-between;
 	height: 100%;
-	width: 65%;
-	background: #000;
+	border: 1px solid green;
+}
+
+.intro-content{
 	position: relative;
 }
 
-
-#right{
-	display: flex;
-	flex-direction: column;
-	flex-basis: 45%;
+.intro-right,.intro-left{
+	height: 100%;
+	width: 50%;
+	border-right: 1px solid blue;
 }
 
-#slides,canvas{
+.team-img{
 	width: 100%;
-	height: 50%;
+	height: 80%;
+	position: absolute;
+	top:10%;
+	left: -15%;
 }
 
-.banner{
+.slogan, .showreel-icon{
+	position: absolute;
+}
+
+
+
+
+/*canvas{
+	position: absolute;
+	z-index: -3;
 	width: 100%;
 	height: 100%;
-	background-position-y: 15%;
-	background-position-x:35%;
-	background-repeat: no-repeat;
-	position: absolute;
-	top: 0;
-	left: -20%;
 }
-
-.slogan, .showreel-video, .event-title{
-	position: absolute;
-	z-index: 1;
-	/*right: 10%;*/
-	color: #fff;
-
-}
-
-
-.slogan{
-	line-height: 1;
-	right: 5%;
-	top: 20%;
-}
-
-.showreel-video{
-	right: 10%;
-	bottom: 20%;
-	font-size: 20px;
-
-
-}
-
-.showreel-video i:hover{
-   position: relative; 
-   top: -3px; 
-   left: -3px; 
-   text-shadow: 1px 1px teal, 
-                2px 2px teal, 
-                3px 3px teal, 
-                4px 4px teal, 
-                5px 5px teal, 
-                6px 6px teal;
-}
-
-
-.event-title{
-	position: absolute;
-	left: 2%;
-	top: 5%;
-	text-transform: uppercase;
-	font-size: .8em;
-}
-
+*/
 
 
 /*.animate{
@@ -161,18 +123,10 @@ h1,h2,h3,h4, p{
 
 */
 
-.showreel-video .fa{
-	font-size: 1em;
-	color: #fff;
-}
-
-.showreel-video span{
-	padding-left: 10px;
-}
 
 
 /*right side styling on the intro section */
-#slides{
+/*#slides{
 	position: relative;
 	border-top: .5px solid grey;
 	box-sizing: border-box;
@@ -215,7 +169,7 @@ h1,h2,h3,h4, p{
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
-
+*/
 
 /*about us*/
 .section-title{
@@ -243,6 +197,36 @@ h1,h2,h3,h4, p{
 	color: rgb(215,209,152);
 }
 
+
+/*--client section --*/
+
+#clients{
+	background: rgb(92,92,92);
+}
+
+
+.clients-container{
+	background: rgb(92,92,92);
+	width: 95%;
+}
+.first-logo,.second-logo{
+	display: flex;
+	justify-content: space-between;
+}
+
+.first-logo{
+	margin-bottom: 1.5em;
+}
+
+.first-logo img{
+	width: 15%;
+	height: 120px;
+}
+
+.second-logo img{
+	width: 20%;
+	height: 50px;
+}
 /*our service*/
 
 .service-container{
@@ -316,10 +300,12 @@ h1,h2,h3,h4, p{
 }
 
 
+
+
+
 /*styling the footer */
 
 footer{
-	margin-top: 50px;
 	font-size: .8em;
 	color: rgb(118,118,123);
 	background: rgb(31,30,32);
@@ -408,6 +394,24 @@ footer a:hover{
 
 @media screen and (max-width: 845px){
 	/* kill the side bar on the intro section */
+
+	.toggle{
+		display: block;
+	}
+
+	#main-nav{
+		display: none;
+	}
+
+
+	#main-nav li{
+		margin-bottom: .5em;
+	}
+
+	.active{
+		display: block;
+	}
+
 	#showreel{
 		min-width: 100%;
 	}
@@ -425,6 +429,8 @@ footer a:hover{
 		color: #fff;
 		display: block;
 	}
+
+
 }
 
 

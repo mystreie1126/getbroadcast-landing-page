@@ -1,15 +1,21 @@
-$(".showreel-video").hover(function(){
-	$(".banner").css({
-		"transform":"translateX(20%)",
+$(".showreel-icon").hover(function(){
+	$(".team-img").css({
+		"transform":"translateX(15%)",
 		"transition-duration": "1s"
 	});
 },function(){
-	$(".banner").css({
+	$(".team-img").css({
 		"transform":"translateX(-1.5%)",
 		"transition-duration": "1s"
 	});
 });
 
+
+$(document).ready(function(){
+	$('.menu').click(function(){
+		$('#main-nav').toggleClass('active');
+	});
+});
 
 var images = document.querySelectorAll(".slide-img");
 var index = 0;

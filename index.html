@@ -10,13 +10,16 @@
 </head>
 <body>
 
-<header id="top-nav">
+<header>
 	<div class="container top-container">
-		<ul class="top-nav">
+		<div class="toggle">
+			<i class="fa fa-bars menu" aria-hidden="true"></i>
+		</div>
+		<ul id="main-nav">
+			<li class="home"><a href="#"><span class="get">get</span>broadcasting</a></li>
 			<li><a href="#">Vlog</a></li>
 			<li><a href="#">Live Stream</a></li>
 			<li><a href="#">Strategy</a></li>
-			<li><a href="#"><img src="assets/img/top-logo.png"></a></li>
 			<li><a href="#">Platform</a></li>
 			<li><a href="#">Video</a></li>
 			<li><a href="#">Contact</a></li>
@@ -27,30 +30,53 @@
 
 
 <section id="intro">
-	<div id="showreel">
-		<!-- <span class="event-title">video for events</span> -->
-		<div class="slogan">
-			<h1>Your Story</h1>
-			<h1>Our Business</h1>
+	<div class="container section-container">
+		<div id="main-intro">
+			<div class="intro-content intro-left">
+					<img class="team-img" src="assets/img/team.png" alt="">
+					<h3 class="slogan">Your Story</h1>
+					<h3 class="slogan">Our Business.</h1>
+					<a class="fa fa-play-circle-o showreel-icon" href="#"><span>Showreel</span></a>	
+			
+			</div>
+
+			<div class="intro-content intro-right">
+				<!-- 	<canvas></canvas> -->
+				<div class="quotes">
+					<h3 class="quote-head">"never mind the scripts, just make the video"</h3>
+					<h4 class=" quote-end">- Said nobody sensible, ever.</h4>
+					<img src="assets/img/top-logo.png" class="logo">
+				</div>
+			</div>
 		</div>
-		<a class="showreel-video" href="#"><i class="fa fa-play"><span>Showreel</span></i></a>
-		<div class="banner" style="background-image: url('assets/img/team.png');"></div>
-	</div>
 
-	<div id="right">
-		<div id="slides">
-			<a href="#"><img class="slide-img" src="assets/img/slide1.jpeg"></a>
-			<a href="#"><img class="slide-img" src="assets/img/slide2.jpeg"></a>
-			<a href="#"><img class="slide-img" src="assets/img/slide3.jpeg"></a>
-			<a href="#"><img class="slide-img" src="assets/img/slide4.jpeg"></a>
-			<div class="overlay">
-    			<a href="#" class="text">Evolving with Video</a>
-  			</div>
-	    </div>
-		<canvas>
+	</div>	
 
-		</canvas>
-	</div>
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </section><!-- end of intro -->
 
 <section id="about-us">
@@ -156,9 +182,26 @@
 
 
 
+<h3 class="section-title">- Our Clients -</h3>
 
+<section id="clients">
+	<div class="container clients-container">
+		<div class="first-logo">
+			<img src="assets/img/footer-logos-1.png" alt="">
+			<img src="assets/img/footer-logos-2.png" alt="">
+			<img src="assets/img/footer-logos-3.png" alt="">
+			<img src="assets/img/footer-logos-4.png" alt="">
+			<img src="assets/img/footer-logos-5.png" alt="">
+		</div>
 
-
+		<div class="second-logo">
+			<img src="assets/img/footer-logos-6.png" alt="">
+			<img src="assets/img/footer-logos-7.png" alt="">
+			<img src="assets/img/footer-logos-8.png" alt="">
+			<img src="assets/img/footer-logos-9.png" alt="">
+		</div>
+	</div>
+</section>
 
 
 
@@ -236,6 +279,7 @@
 <!-- <script type="text/javascript" src="https://getbroadcasting.qumucloud.com/widgets/application.js"></script> -->
 <script src="scripts/jquery-3.2.1.js"></script>
 <script src="scripts/main.js" async></script>
+<script src="scripts/canvas.js" async></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJa0Lz03IOq0qQnOxsOjH9Z8urVY-Nr6E&callback=initMap"
     async defer></script>
 </body>
