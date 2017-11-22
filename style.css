@@ -593,11 +593,17 @@ footer a:hover{
 
 	/*the service intro section responsive styling*/
 
-	.service-quotes{
+	.service-quotes, .service-intro a:nth-of-type(2){
 		display: none;
 	}
 
-	
+	.service-intro a{
+		display: inline-block;
+		margin:auto;
+		text-align: center;
+		font-size: 1.2em;
+	}
+
 	
 
 }
