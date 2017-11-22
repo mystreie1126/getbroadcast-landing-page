@@ -4,42 +4,25 @@
   <meta charset="utf-8">
   <title>toggle demo</title>
   <style>
-  p {
-    background: #dad;
-    font-weight: bold;
-    font-size: 16px;
-    display: none;
-  }
-  .service-intro{
-    display: flex;
-    justify-content: space-between;
-  }
+    .test{
+      width: 200px;
+      height:200px;
+    }
+
+    .test:after{
+      position: absolute;
+      content: "aaa";
+    }
   </style>
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
- 
-<div class="section-intro service-intro">
-      <h3 class="section-title">what we do</h3>
-      <article class="service-quotes">
-        <h1>"never mind the </h1>
-        <h1>script, just make</h1>
-        <h1>the video"</h1>
-        <h3>-said nobody sensible, ever.</h3>
-      </article>
-      <a href="#vlog" class="to-each-section">view next</a>
-    </div>
+<div class="test" style="background: url('assets/img/slide1.jpeg');">
 
+  <!-- my image tag -->
 
-<button>Toggle 'em</button>
-<p>Hiya</p>
-<p>Such interesting text, eh?</p>
  
-<script>
-$( "button" ).hover(function() {
-  $( "p" ).toggle( "slow" );
-});
-</script>
- 
+</div>
+
 </body>
 </html>

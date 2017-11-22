@@ -80,6 +80,7 @@ $(document).ready(function(){
 	});
 });
 
+console.log($('.img-overlay'));
 
 
 // var images = document.querySelectorAll(".slide-img");

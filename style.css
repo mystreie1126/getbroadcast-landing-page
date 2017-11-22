@@ -256,180 +256,94 @@ canvas{
 
 
 
-/*right side styling on the intro section */
-/*#slides{
-	position: relative;
-	border-top: .5px solid grey;
-	box-sizing: border-box;
+#service-cata{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	
 }
-.slide-img{
+/*between .service-img-holder and .service-details*/
+
+.each-service{
+	display: flex;
+	position: relative;
+	
+}
+
+.each-service:hover{
+	background: #fff;
+}
+
+
+.service-img-holder img{
 	width: 100%;
 	height: 100%;
+	position: relative;
+}
+
+.service-img-holder img:after{
 	position: absolute;
+	content: "haha";
+	z-index: 10;
 }
 
-#slides:hover{
-	border: 3px dashed rgb(118,118,123);
-}
-
-.overlay {
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  right: 0;
-  background-color: rgba(49,64,204,0.5);
-  overflow: hidden;
-  width: 100%;
-  height:0;
-  transition: .5s ease;
-  cursor: pointer;
-}
-
-#slides:hover .overlay {
-  bottom: 0;
-  height: 100%;
-}
-
-.text {
-  white-space: nowrap; 
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
-*/
-
-/*about us*/
-/*.section-title{
-	padding-bottom: 2em;
-	text-align: center;
-}
-#about-us{
-	margin-top: 5em;
-	margin-bottom: 5em;
-}
-
-.about-container{
-	text-align: center;
-}
-
-#about-us h2{
-	font-size: 2em;
-}
-
-#about-us p{
-	font-style: italic;
-}
-
-#about-us span{
-	color: rgb(215,209,152);
+/*.service-img-holder img:hover{
+	width: 70%;
 }*/
 
 
-/*--client section --*/
-
-/*#clients{
-	background: rgb(92,92,92);
-}
-
-
-.clients-container{
-	background: rgb(92,92,92);
-	width: 95%;
-}
-.first-logo,.second-logo{
-	display: flex;
-	justify-content: space-between;
-}
-
-.first-logo{
-	margin-bottom: 1.5em;
-}
-
-.first-logo img{
-	width: 15%;
-	height: 120px;
-}
-
-.second-logo img{
-	width: 20%;
-	height: 50px;
-}
-/*our service*/
-
-/*.service-container{
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-}
-
-.details-service{
-	box-sizing: border-box;
-	width: 22%;
-	border-left: .5px solid #8b8f96;
-	border-right: .5px solid #8b8f96;
-	padding-left: .5em;
-	padding-right: .5em;
-	cursor: pointer;
-}
-
-
-.details-service img{
-	width: 100%;
-}
-
-#service p, #more{
-	font-size: .8em;
-	font-style: italic;
-}
-
-
-.service-title{
-	text-align: center;
-	text-transform: uppercase;
-	font-family: Impact;
-	margin-bottom: .5em;
-}
-
-.highlighted{
-	font-family: Arial;
-	font-style: normal;
-	color: inherit;
-}
-
-.more{
-	color: rgb(239,65,53);
-	text-transform: none;
-}
-.service-video-holder{
-	position: relative;
-}
-
-.service-video-holder a{
+/*
+.service-img-holder img:before{
 	position: absolute;
-	top: 30%;
-	left: 40%;
-	font-size: 40px;
-	color: #fff;
+	content: " ";
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 	display: none;
-}
-
-.details-service:hover .service-video-holder a{
-	display: block;
-}
-
-.details-service:hover {
-	background: #bcc1c6;
-}
-
-.details-service:hover .highlighted{
-	font-weight: bold;
-	font-size: 1.2em;
+	z-index: 0;
+	background-color: red;
 }
 */
+/*.service-img-holder img:hover:before{
+	display: block;
+}*/
+
+
+.service-video-icon{
+	position: absolute;
+	font-size: 4em;
+	top: 40%;
+	left: 28%;
+	color: #fff;
+	z-index: 2;
+}
+
+
+
+.service-img-holder{
+	width: 40%;
+	padding:1em;
+	padding-left: 10%;	
+}
+
+.service-details{
+	width: 40%;
+	padding:1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;	
+}
+
+.service-details a{
+	text-transform: none;
+	font-size: 1.2em;
+	color: red;
+}
+
+.service-details a:hover{
+	font-style: italic;
+}
 
 
 
