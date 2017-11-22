@@ -284,6 +284,12 @@ canvas{
 
 .overlay{
 	position: relative;
+	transition: all 1s linear;
+}
+
+.overlay:hover{
+	transform: scale(1.1);
+   	z-index:8;
 }
 
 .overlay:after{
