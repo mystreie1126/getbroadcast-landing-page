@@ -274,49 +274,44 @@ canvas{
 	background: #fff;
 }
 
-
+.service-img-holder{
+	position: relative;
+}
 .service-img-holder img{
 	width: 100%;
 	height: 100%;
+}
+
+.overlay{
 	position: relative;
 }
 
-.service-img-holder img:after{
-	position: absolute;
-	content: "haha";
-	z-index: 10;
-}
-
-/*.service-img-holder img:hover{
-	width: 70%;
-}*/
-
-
-/*
-.service-img-holder img:before{
+.overlay:after{
 	position: absolute;
 	content: " ";
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
+	background-color: rgba(239,65,53,0.5);;
+	z-index: 1;
 	display: none;
-	z-index: 0;
-	background-color: red;
 }
-*/
-/*.service-img-holder img:hover:before{
+
+.overlay:hover:after{
 	display: block;
-}*/
+}
+
 
 
 .service-video-icon{
 	position: absolute;
 	font-size: 4em;
 	top: 40%;
-	left: 28%;
+	left: 45%;
 	color: #fff;
 	z-index: 2;
+	display: none;
 }
 
 

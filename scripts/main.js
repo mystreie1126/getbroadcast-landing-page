@@ -80,7 +80,13 @@ $(document).ready(function(){
 	});
 });
 
-console.log($('.img-overlay'));
+// $(document).ready(function(){
+// 	$('.overlay').hover(function(){
+// 		$(this).siblings('a').addClass('.service-video-icon');
+// 	},function(){
+		
+// 	})
+// });
 
 
 // var images = document.querySelectorAll(".slide-img");
