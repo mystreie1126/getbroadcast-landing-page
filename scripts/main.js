@@ -65,12 +65,20 @@ $(document).ready(function(){
     }
   });
 
-
 });
 
 
 
+$(document).ready(function(){
+	$('.to-each-section').click(function(e){
+		var linkhref = $(this).attr('href');
 
+		$('html,body').animate({
+			scrollTop: $(linkhref).offset().top
+		});
+		e.preventDefault();
+	});
+});
 
 
 

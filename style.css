@@ -23,11 +23,7 @@ h1,h2,h3,h4, p{
 	margin: 0 auto;
 }
 
-.section-title{
-	text-align: center;
-	margin-top: 2em;
-	margin-bottom: 1.5em;
-}
+
 /* top main nav bar */
 
 header{
@@ -223,6 +219,41 @@ canvas{
 
 */
 
+#service{
+	background: rgb(242,242,242);
+}
+
+.service-intro{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	/*padding-top: .5em;*/
+}
+
+.service-intro .to-each-section{
+	padding-top: .5em;
+}
+
+.service-intro a{
+	text-transform: none;
+	color: rgb(239,65,53);
+}
+
+.service-quotes{
+	width: 30%;
+
+}
+
+.service-intro h1{
+	text-transform: uppercase;
+}
+
+.service-title{
+	text-align: left;
+	color: purple;
+}
+
 
 
 /*right side styling on the intro section */
@@ -300,7 +331,7 @@ canvas{
 
 /*--client section --*/
 
-#clients{
+/*#clients{
 	background: rgb(92,92,92);
 }
 
@@ -329,7 +360,7 @@ canvas{
 }
 /*our service*/
 
-.service-container{
+/*.service-container{
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -398,7 +429,7 @@ canvas{
 	font-weight: bold;
 	font-size: 1.2em;
 }
-
+*/
 
 
 
@@ -559,6 +590,15 @@ footer a:hover{
 	#hiding{
 		display: block;
 	}
+
+	/*the service intro section responsive styling*/
+
+	.service-quotes{
+		display: none;
+	}
+
+	
+	
 
 }
 

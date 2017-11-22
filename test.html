@@ -1,36 +1,45 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <!-- This stylesheet contains specific styles for displaying the map
-         on this page. Replace it with your own styles as described in the
-         documentation:
-         https://developers.google.com/maps/documentation/javascript/tutorial -->
-   <style type="text/css" media="screen">
-     #map{
-        width: 500px;
-        height:500px;
-     }  
-   </style>
-  </head>
-  <body>
-    <div id="map"></div>
-    <script>
-     function initMap() {
-  var myLatLng = {lat: 53.341750, lng: -6.262993};
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>toggle demo</title>
+  <style>
+  p {
+    background: #dad;
+    font-weight: bold;
+    font-size: 16px;
+    display: none;
+  }
+  .service-intro{
+    display: flex;
+    justify-content: space-between;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+ 
+<div class="section-intro service-intro">
+      <h3 class="section-title">what we do</h3>
+      <article class="service-quotes">
+        <h1>"never mind the </h1>
+        <h1>script, just make</h1>
+        <h1>the video"</h1>
+        <h3>-said nobody sensible, ever.</h3>
+      </article>
+      <a href="#vlog" class="to-each-section">view next</a>
+    </div>
 
-  var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 14,
-    center: myLatLng
-  });
 
-  var marker = new google.maps.Marker({
-    position: myLatLng,
-    map: map,
-    title: 'We are here!'
-  });
-}
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJa0Lz03IOq0qQnOxsOjH9Z8urVY-Nr6E&callback=initMap"
-    async defer></script>
-  </body>
+<button>Toggle 'em</button>
+<p>Hiya</p>
+<p>Such interesting text, eh?</p>
+ 
+<script>
+$( "button" ).hover(function() {
+  $( "p" ).toggle( "slow" );
+});
+</script>
+ 
+</body>
 </html>
