@@ -4,25 +4,56 @@
   <meta charset="utf-8">
   <title>toggle demo</title>
   <style>
-    .test{
-      width: 200px;
-      height:200px;
-    }
+     .image_wrap {
+   position: relative;
+ }
+ 
+/* .image_wrap .caption {
+   margin:0;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   opacity: 0;
+   text-align: center;
+   display: inline-block;
+   background: linear-gradient(rgba(51, 153, 170, 0.9), rgba(51, 153, 170, 0.8));
+   -webkit-transition: all .8s ease-in-out;
+   transition: all .8s ease-in-out
+   
+ }*/
+ 
+/* .image_wrap:hover .caption {
+   opacity: 1;
+   z-index:9999;
+ }
+ */
+ .image_wrap img {
+   position: relative;
+   -webkit-transition: all 2s linear;
+   transition: all 2s linear;
+ }
+ 
+ .image_wrap:hover img {
+   -ms-transform: scale(1.2);
+   -webkit-transform: scale(1.2);
+   transform: scale(1.2);
+   z-index:8;
+ }
 
-    .test:after{
-      position: absolute;
-      content: "aaa";
-    }
   </style>
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
-<div class="test" style="background: url('assets/img/slide1.jpeg');">
-
-  <!-- my image tag -->
-
- 
+<div class="image_wrap">
+  <div class="caption">
+    <i class="fa fa-search-plus" aria-hidden="true"></i>
+    <p class="heading">
+      Resort Website
+    </p>
+  </div>
+  <img src="https://1.bp.blogspot.com/-zV8FBBlJum0/VwawuVu25qI/AAAAAAAAVbQ/sKSYd7YIlikyV80AonnVLOzkaPL1IZUaw/s1600/Kamen%2BRider%2BAmazons.jpg" alt="resort" class="portfolio-pic" />
 </div>
+
 
 </body>
 </html>

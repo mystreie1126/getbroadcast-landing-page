@@ -28,7 +28,7 @@ $(document).ready(function(){
 	});
 
 	$(window).scroll(function() {
-     if($(window).scrollTop() >= 100) {
+     if($(window).scrollTop() >= 50) {
        $('#main-nav').css({
        		"background":"#fff",
        		"width":"100%",
@@ -80,13 +80,21 @@ $(document).ready(function(){
 	});
 });
 
-// $(document).ready(function(){
-// 	$('.overlay').hover(function(){
-// 		$(this).siblings('a').addClass('.service-video-icon');
-// 	},function(){
+
+
+$(document).ready(function(){
+	$('.overlay').hover(function(){
+		$(this).find('.service-video-icon').css({
+			'display':'block'
+		});
 		
-// 	})
-// });
+	},function(){
+		$(this).find('.service-video-icon').css({
+			'display':'none'
+		});
+	
+	})
+});
 
 
 // var images = document.querySelectorAll(".slide-img");
