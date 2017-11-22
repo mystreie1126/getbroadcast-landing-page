@@ -70,11 +70,13 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
+	// var headerHeight = $('header').outerHeight();
+	var headerHeight = 67.98;
 	$('.to-each-section').click(function(e){
 		var linkhref = $(this).attr('href');
 
 		$('html,body').animate({
-			scrollTop: $(linkhref).offset().top
+			scrollTop: $(linkhref).offset().top - headerHeight
 		});
 		e.preventDefault();
 	});
@@ -96,6 +98,10 @@ $(document).ready(function(){
 	})
 });
 
+
+$( ".service-details" ).hover(function() {
+  $(this).find( ".toggle-article" ).toggle( "slow" );
+});
 
 // var images = document.querySelectorAll(".slide-img");
 // var index = 0;
@@ -126,20 +132,20 @@ $(document).ready(function(){
 // },1500);
 
 //adding google map 
-function initMap() {
-  var myLatLng = {lat: 53.341750, lng: -6.262993};
+// function initMap() {
+//   var myLatLng = {lat: 53.341750, lng: -6.262993};
 
-  var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 14,
-    center: myLatLng
-  });
+//   var map = new google.maps.Map(document.getElementById('map'), {
+//     zoom: 14,
+//     center: myLatLng
+//   });
 
-  var marker = new google.maps.Marker({
-    position: myLatLng,
-    map: map,
-    title: 'We are here!'
-  });
-}
+//   var marker = new google.maps.Marker({
+//     position: myLatLng,
+//     map: map,
+//     title: 'We are here!'
+//   });
+// }
 
 
 

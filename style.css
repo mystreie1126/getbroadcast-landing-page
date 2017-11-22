@@ -229,10 +229,12 @@ canvas{
 	align-items: flex-start;
 	flex-wrap: wrap;
 	/*padding-top: .5em;*/
+	padding-top: 2em;
+	padding-bottom: 2em;
 }
 
 .service-intro .to-each-section{
-	padding-top: .5em;
+	/*padding-top: .5em;*/
 }
 
 .service-intro a{
@@ -242,9 +244,12 @@ canvas{
 
 .service-quotes{
 	width: 30%;
-
+	font-family: 'Work Sans', sans-serif;
 }
 
+.service-quotes span{
+	margin-left: 1em;
+}
 .service-intro h1{
 	text-transform: uppercase;
 }
@@ -285,6 +290,7 @@ canvas{
 .overlay{
 	position: relative;
 	transition: all 1s linear;
+	box-sizing: border-box;
 }
 
 .overlay:hover{
@@ -334,7 +340,15 @@ canvas{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;	
+
 }
+
+.toggle-article{
+	display: none;
+	font-size: .9em;
+}
+
+
 
 .service-details a{
 	text-transform: none;
@@ -511,7 +525,7 @@ footer a:hover{
 
 	/*the service intro section responsive styling*/
 
-	.service-quotes, .service-intro a:nth-of-type(2){
+	.service-quotes, .service-intro span{
 		display: none;
 	}
 
@@ -522,7 +536,15 @@ footer a:hover{
 		font-size: 1.2em;
 	}
 
+	.each-service{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 	
+	.service-img-holder,.service-details{
+		width: 100%;
+	}
 
 }
 
