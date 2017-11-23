@@ -135,7 +135,11 @@ $( ".service-details" ).hover(function() {
 
 
 
-
+$( "#clickme" ).click(function() {
+  // $( "#book" ).toggle( "slow", function() {
+   
+  // });
+});
 
 
 

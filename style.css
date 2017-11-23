@@ -430,7 +430,47 @@ canvas{
 }
 
 
+/*styling the clients */
 
+.vlog-quotes span{
+	text-align: right;
+}
+
+.clients-img{
+	width: 80%;
+	/*height: 70vh;*/
+	margin:auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding-bottom: 2em;
+}
+.clients-img img{
+	width: 30%;
+}
+
+.smaller,.middle{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 1em;
+	flex-wrap: wrap;
+}
+.bigger{
+	justify-content: space-around;
+	text-align: center;
+}
+.smaller {
+	height: 50px;
+}
+
+.middle{
+	height: 80px;
+}
+
+.bigger img{
+	height: 150px;
+	width: 25%;
+}
 
 
 
