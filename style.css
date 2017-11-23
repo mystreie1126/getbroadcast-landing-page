@@ -475,6 +475,27 @@ canvas{
 
 
 
+
+
+
+#work-together{
+	background: rgb(239,65,53);
+	padding:1em;
+	text-decoration: none;
+	font-size: 1em;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+}
+
+#work-together:hover{
+	background:  rgb(31,30,32);
+	text-decoration: none;
+	font-style: italic;
+	color: rgb(215,209,152);
+}
+
+
 /*styling the footer */
 
 footer{
@@ -493,22 +514,7 @@ footer a:hover{
 	text-decoration: underline;
 }
 
-#work-together{
-	background: rgb(239,65,53);
-	padding:1em;
-	text-decoration: none;
-}
 
-#work-together:hover, #work-together a:hover{
-	background:  rgb(31,30,32);
-	text-decoration: none;
-}
-
-#work-together a{
-	color: #fff;
-	text-align: center;
-	font-size: 1.2em;
-}
 
 
 .footer-container{
