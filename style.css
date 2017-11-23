@@ -364,6 +364,24 @@ canvas{
 	font-size: 1em;
 }
 
+/*vlog section*/
+
+.vlog-quotes{
+	display: flex;
+	flex-direction: column;
+}
+
+
+.view-all-video{
+	align-self: center;
+}
+
+.view-all-video:hover{
+	font-style: italic;
+}
+
+
+
 
 
 /*styling the footer */
