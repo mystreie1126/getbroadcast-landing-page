@@ -6,6 +6,7 @@ body{
 	font-family: 'PT Sans', sans-serif;
 	line-height: 1.5;
 	/*background: #CC2B41;*/	
+	background: rgb(242,242,242);
 }
 
 a{
@@ -219,9 +220,6 @@ canvas{
 
 */
 
-#service{
-	background: rgb(242,242,242);
-}
 
 .service-intro{
 	display: flex;
@@ -240,7 +238,19 @@ canvas{
 .service-intro a{
 	text-transform: none;
 	color: rgb(239,65,53);
+	font-family: 'Work Sans', sans-serif;
 }
+
+.service-intro a:hover{
+	font-style: italic;
+}
+
+
+.service-intro span{
+	font-family: 'Work Sans', sans-serif;
+	font-weight: normal;
+}
+
 
 .service-quotes{
 	width: 30%;
@@ -366,19 +376,60 @@ canvas{
 
 /*vlog section*/
 
-.vlog-quotes{
+#all-videos{
+	width: 80%;
+	margin:auto;
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.video-holder{
+	width: 30%;
+	position: relative;
+}
+
+.video-holder img{
+	width: 100%;
+}
+
+.video-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(35, 36, 38,0.9);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
 }
 
 
-.view-all-video{
-	align-self: center;
+.video-holder:hover .video-overlay {
+  height: 100%;
 }
 
-.view-all-video:hover{
-	font-style: italic;
+
+.overlay-text {
+  white-space: nowrap; 
+  color: #fff;
+  font-size: .8em;
+  position: absolute;
+  overflow: hidden;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
+
+.overlay-text span{
+	font-family: Times;
+	font-weight:normal;
+	/*font-size: .em;*/
+	color: rgb(239,65,53);;
+}
+
+
 
 
 
@@ -564,6 +615,11 @@ footer a:hover{
 		width: 100%;
 	}
 
+
+
+	.video-holder{
+		width: 100%;
+	}
 }
 
 

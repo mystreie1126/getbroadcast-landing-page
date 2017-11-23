@@ -103,7 +103,7 @@ $( ".service-details" ).hover(function() {
   $(this).find( ".toggle-article" ).toggle( "slow" );
 });
 
-// var images = document.querySelectorAll(".slide-img");
+// var images = document.querySelectorAll(".video-holder img");
 // var index = 0;
 // var time = 1000;
 
@@ -130,6 +130,36 @@ $( ".service-details" ).hover(function() {
 
 
 // },1500);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //adding google map 
 // function initMap() {
