@@ -135,10 +135,10 @@ $( ".service-details" ).hover(function() {
 
 
 
-$( "#clickme" ).click(function() {
-  // $( "#book" ).toggle( "slow", function() {
-   
-  // });
+$( "#work-together" ).click(function() {
+  $( "#contact" ).toggle( "slow", function() {
+  
+  });
 });
 
 
