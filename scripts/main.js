@@ -67,7 +67,9 @@ $(document).ready(function(){
 
 });
 
-
+$('.menu').click(function(){
+	$('header').toggleClass()
+});
 
 $(document).ready(function(){
 	// var headerHeight = $('header').outerHeight();
